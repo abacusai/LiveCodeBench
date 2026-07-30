@@ -614,6 +614,13 @@ LanguageModelList: list[LanguageModel] = [
         datetime(2023, 1, 1),
         link="https://huggingface.co/abacusai/Dracarys-72B-Instruct",
     ),
+    LanguageModel(
+        "tencent/hy3",
+        "Hy3",
+        LMStyle.OpenAIChat,
+        datetime(2026, 1, 1),
+        link="https://huggingface.co/tencent/Hy3",
+    ),
 ]
 
 LanguageModelStore: dict[str, LanguageModel] = {
