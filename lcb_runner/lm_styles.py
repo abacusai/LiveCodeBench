@@ -174,6 +174,13 @@ LanguageModelList: list[LanguageModel] = [
         link="https://huggingface.co/deepseek-ai/DeepSeek-V2",
     ),
     LanguageModel(
+        "deepseek-v4-flash",
+        "DeepSeek-V4-Flash-0731",
+        LMStyle.DeepSeekAPI,
+        datetime(2025, 7, 1),
+        link="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+    ),
+    LanguageModel(
         "codellama/CodeLlama-70b-hf",
         "CodeLlama-70b-Base",
         LMStyle.GenericBase,
