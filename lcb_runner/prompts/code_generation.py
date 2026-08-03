@@ -206,7 +206,7 @@ def get_base_model_question_template_answer(question: CodeGenerationProblem):
 def format_prompt_generation(
     question: CodeGenerationProblem, LanguageModelStyle: LMStyle
 ) -> str:
-    if LanguageModelStyle in [LMStyle.OpenAIChat, LMStyle.DeepSeekAPI]:
+    if LanguageModelStyle in [LMStyle.OpenAIChat, LMStyle.DeepSeekAPI, LMStyle.QwenAPI]:
         chat_messages = [
             {
                 "role": "system",

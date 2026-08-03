@@ -30,6 +30,10 @@ def build_runner(args, model: LanguageModel):
         from lcb_runner.runner.deepseek_runner import DeepSeekRunner
 
         return DeepSeekRunner(args, model)
+    if model.model_style == LMStyle.QwenAPI:
+        from lcb_runner.runner.qwen_runner import QwenRunner
+
+        return QwenRunner(args, model)
     elif model.model_style in []:
         raise NotImplementedError(
             f"Runner for language model style {model.model_style} not implemented yet"

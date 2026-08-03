@@ -12,6 +12,7 @@ class LMStyle(Enum):
     CohereCommand = "CohereCommand"
     DataBricks = "DataBricks"
     DeepSeekAPI = "DeepSeekAPI"
+    QwenAPI = "QwenAPI"
 
     GenericBase = "GenericBase"
 
@@ -543,6 +544,13 @@ LanguageModelList: list[LanguageModel] = [
         LMStyle.Qwen1point5,
         datetime(2024, 3, 31),
         link="https://huggingface.co/qwen/Qwen1.5-72B-Chat/",
+    ),
+    LanguageModel(
+        "qwen3.8-max",
+        "Qwen3.8-Max",
+        LMStyle.QwenAPI,
+        datetime(2026, 8, 2),
+        link="https://qwen.ai/blog?id=qwen3.8",
     ),
     LanguageModel(
         "abacusai/Smaug-2-72B",
