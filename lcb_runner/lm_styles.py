@@ -12,6 +12,7 @@ class LMStyle(Enum):
     CohereCommand = "CohereCommand"
     DataBricks = "DataBricks"
     DeepSeekAPI = "DeepSeekAPI"
+    MetaAPI = "MetaAPI"
 
     GenericBase = "GenericBase"
 
@@ -172,6 +173,13 @@ LanguageModelList: list[LanguageModel] = [
         LMStyle.DeepSeekAPI,
         datetime(2023, 8, 1),
         link="https://huggingface.co/deepseek-ai/DeepSeek-V2",
+    ),
+    LanguageModel(
+        "muse-spark-1.2",
+        "MuseSpark-1.2",
+        LMStyle.MetaAPI,
+        datetime(2026, 8, 5),
+        link="https://developer.meta.com/ai/models/muse-spark/",
     ),
     LanguageModel(
         "codellama/CodeLlama-70b-hf",
