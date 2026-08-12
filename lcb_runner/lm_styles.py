@@ -12,6 +12,7 @@ class LMStyle(Enum):
     CohereCommand = "CohereCommand"
     DataBricks = "DataBricks"
     DeepSeekAPI = "DeepSeekAPI"
+    XAIAPI = "XAIAPI"
 
     GenericBase = "GenericBase"
 
@@ -613,6 +614,13 @@ LanguageModelList: list[LanguageModel] = [
         LMStyle.DracarysQwen,
         datetime(2023, 1, 1),
         link="https://huggingface.co/abacusai/Dracarys-72B-Instruct",
+    ),
+    LanguageModel(
+        "grok-4.6",
+        "Grok-4.6",
+        LMStyle.XAIAPI,
+        datetime(2026, 8, 12),
+        link="https://docs.x.ai/developers/grok-4-6",
     ),
 ]
 
