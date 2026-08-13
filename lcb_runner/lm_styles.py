@@ -356,6 +356,13 @@ LanguageModelList: list[LanguageModel] = [
         link="https://blog.google/technology/ai/gemini-api-developers-cloud",
     ),
     LanguageModel(
+        "gemini-3.7-flash",
+        "Gemini-Flash-3.7",
+        LMStyle.Gemini,
+        datetime(2026, 8, 13),
+        link="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+    ),
+    LanguageModel(
         "databricks-dbrx-instruct",
         "DBRX-Ins",
         LMStyle.DataBricks,
