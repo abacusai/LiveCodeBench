@@ -12,6 +12,7 @@ class LMStyle(Enum):
     CohereCommand = "CohereCommand"
     DataBricks = "DataBricks"
     DeepSeekAPI = "DeepSeekAPI"
+    ZAIAPI = "ZAIAPI"
 
     GenericBase = "GenericBase"
 
@@ -172,6 +173,13 @@ LanguageModelList: list[LanguageModel] = [
         LMStyle.DeepSeekAPI,
         datetime(2023, 8, 1),
         link="https://huggingface.co/deepseek-ai/DeepSeek-V2",
+    ),
+    LanguageModel(
+        "glm-5.3",
+        "GLM-5.3",
+        LMStyle.ZAIAPI,
+        datetime(2026, 8, 14),
+        link="https://docs.z.ai/guides/llm/glm-5.3",
     ),
     LanguageModel(
         "codellama/CodeLlama-70b-hf",
