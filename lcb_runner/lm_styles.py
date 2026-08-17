@@ -12,6 +12,7 @@ class LMStyle(Enum):
     CohereCommand = "CohereCommand"
     DataBricks = "DataBricks"
     DeepSeekAPI = "DeepSeekAPI"
+    OpenRouterAPI = "OpenRouterAPI"
 
     GenericBase = "GenericBase"
 
@@ -613,6 +614,13 @@ LanguageModelList: list[LanguageModel] = [
         LMStyle.DracarysQwen,
         datetime(2023, 1, 1),
         link="https://huggingface.co/abacusai/Dracarys-72B-Instruct",
+    ),
+    LanguageModel(
+        "qwen/qwen3.8-27b",
+        "Qwen3.8-27B",
+        LMStyle.OpenRouterAPI,
+        datetime(2026, 8, 14),
+        link="https://huggingface.co/Qwen/Qwen3.8-27B",
     ),
 ]
 
